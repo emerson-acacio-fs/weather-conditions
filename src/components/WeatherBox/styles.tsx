@@ -3,8 +3,8 @@ import styled, { css } from "styled-components"
 export const WrapperWeatherBox = styled.div``
 
 export const WeatherImg = styled.img`
-  width: 7rem;
-  height: 7rem;
+  width: 10rem;
+  height: 10rem;
   object-fit: cover;
 `
 

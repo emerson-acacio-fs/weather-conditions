@@ -3,16 +3,20 @@ import { render } from "helpers/test-utils"
 import { WeatherBox } from "."
 
 describe("< WeatherBox />", () => {
-  it("should exist in the document", () => {
+  it("should display the icon image", () => {
     render(<WeatherBox title="Clouds" weatherIcon="10d" />)
     const element = screen.getByAltText(/Clouds/i)
     expect(element).toHaveAttribute(
       "src",
       `http://openweathermap.org/img/wn/10d@2x.png`,
     )
+  })
+  it("should have the specified style", () => {
+    render(<WeatherBox title="Clouds" weatherIcon="10d" />)
+    const element = screen.getByAltText(/Clouds/i)
     expect(element).toHaveStyle({
-      width: "7rem",
-      height: "7rem",
+      width: "10rem",
+      height: "10rem",
       objectFit: "cover",
     })
     const title = screen.getByText(/Clouds/i)

@@ -40,7 +40,7 @@ const helperAction =[
 const typeAction =[
   {
     type: 'add',
-    path: '../src/types/{{pascalCase name}}Type.ts',
+    path: '../src/types/I{{pascalCase name}}.ts',
     templateFile: 'templates/type.ts.hbs',
   }
 ]
