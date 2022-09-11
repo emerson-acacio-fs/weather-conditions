@@ -11,7 +11,7 @@ Para iniciar o projeto uso o comando:
 
 Após a inicialização abra o endereço [http://localhost:3000](http://localhost:3000) no navegador.
 
-Para executar os teste unitário, execute o seguinte comando:
+Para executar os teste unitário execute o seguinte comando:
 
 ### `yarn test`
 
@@ -19,7 +19,7 @@ Para criar o build execute o comando:
 
 ### `yarn build`
 
-Para acessar o Storybook dos componentes, execute o comando:
+Para acessar o Storybook dos componentes execute o comando:
 
 ### ` yarn storybook`
 
