@@ -5,6 +5,8 @@ export const WrapperHeader = styled.div``
 export const WeatherData = styled.div`
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: 12rem;
 `
 export const Description = styled.div`
   ${({ theme }) => css`

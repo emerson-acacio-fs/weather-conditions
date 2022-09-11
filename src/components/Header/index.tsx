@@ -6,13 +6,14 @@ import * as S from "./styles"
 export type HeaderProps = {
   weather: IWeatherData
   temperature: number
+  feelsLike: number
 }
 
-export const Header = ({ weather, temperature }: HeaderProps) => (
+export const Header = ({ weather, temperature, feelsLike }: HeaderProps) => (
   <S.WrapperHeader>
     <S.WeatherData>
       <WeatherBox title={weather.main} weatherIcon={weather.icon} />
-      <TemperatureBox temperature={temperature} />
+      <TemperatureBox temperature={temperature} feelsLike={feelsLike} />
     </S.WeatherData>
     <S.Description>{weather.description}</S.Description>
   </S.WrapperHeader>

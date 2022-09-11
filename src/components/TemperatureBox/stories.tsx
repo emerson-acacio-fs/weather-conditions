@@ -16,4 +16,5 @@ export const Default: ComponentStory<typeof TemperatureBox> = (args) => (
 
 Default.args = {
   temperature: 10,
+  feelsLike: 5,
 }

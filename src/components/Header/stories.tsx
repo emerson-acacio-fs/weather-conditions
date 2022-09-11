@@ -24,4 +24,5 @@ Default.args = {
     icon: "10n",
   },
   temperature: 55,
+  feelsLike: 10,
 }
