@@ -11,7 +11,7 @@ Para iniciar o projeto uso o comando:
 
 Após a inicialização abra o endereço [http://localhost:3000](http://localhost:3000) no navegador.
 
-Para executar os teste unitário, executo o seguinte comando:
+Para executar os teste unitário, execute o seguinte comando:
 
 ### `yarn test`
 
