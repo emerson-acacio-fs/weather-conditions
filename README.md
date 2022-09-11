@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Descrição
+Esse projeto foi criado para consumir a API do  Open Weather [https://openweathermap.org/api] e fornecer os dados atualizados da previsão do tempo para uma determinada cidade.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
