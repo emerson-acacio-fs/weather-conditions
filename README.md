@@ -1,46 +1,34 @@
-# Getting Started with Create React App
+# Descrição
+Esse projeto foi criado para consumir a API do  [Open Weather](https://openweathermap.org/api) e fornecer os dados atualizados da previsão do tempo para uma determinada cidade.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
-In the project directory, you can run:
+Para iniciar o projeto uso o comando:
 
-### `npm start`
+### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Após a inicialização abra o endereço [http://localhost:3000](http://localhost:3000) no navegador.
 
-### `npm test`
+Para executar os teste unitário, execute o seguinte comando:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### `yarn test`
 
-### `npm run build`
+Para criar o build execute o comando:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### `yarn build`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Para acessar o Storybook dos componentes, execute o comando:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### ` yarn storybook`
 
-### `npm run eject`
+Após a inicialização abra o endereço [http://localhost:6006](http://localhost:6006) no navegador. 
+A janela apresentada na figura a seguir será exibida. Nela é possível analisar os diferentes componentes do projeto e suas propriedades.
+![image](https://user-images.githubusercontent.com/85792226/189542127-d8eee86b-ddbf-4803-8ae9-934fd911796a.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Uso da aplicação
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Para executar um consulta é preciso digitar o nome da cidade desejada  no input e clicar em pesquisar, conforma a figura a seguir.
+![image](https://user-images.githubusercontent.com/85792226/189541889-56369c2b-af30-4e96-8a3f-06227de838c6.png)
