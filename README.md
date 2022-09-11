@@ -26,3 +26,4 @@ Para acessar o Storybook dos componentes, execute o comando:
 Após a inicialização abra o endereço [http://localhost:6006](http://localhost:6006) no navegador.
 
 
+![image](https://user-images.githubusercontent.com/85792226/189541889-56369c2b-af30-4e96-8a3f-06227de838c6.png)
