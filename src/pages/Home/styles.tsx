@@ -14,7 +14,9 @@ export const WeatherWrapper = styled.main`
 `
 export const Wrapper = styled.main`
   display: flex;
+  align-items: center;
   justify-content: center;
+  flex-direction: column;
 `
 
 export const LoaderWrapper = styled.main`
@@ -30,6 +32,13 @@ export const LoaderWrapper = styled.main`
   height: 100%;
 `
 
-export const ErrorMessageWrapper = styled.h1`
+export const ErrorMessageWrapper = styled.div`
   color: ${({ theme }) => theme.colors.red};
+  font-size: ${({ theme }) => theme.font.sizes.medium};
+`
+export const InputArea = styled.div`
+  padding: 2rem;
+  button {
+    margin-left: 1.5rem;
+  }
 `

@@ -1,4 +1,5 @@
 import { getCurrentWeatherData } from "api/services"
+import { AxiosError } from "axios"
 import { helperCurrentWeatherResponseToData } from "helpers/helperCurrentWeatherToData"
 import { useEffect, useState } from "react"
 import { IData } from "types/IData"
@@ -7,6 +8,7 @@ interface IUseCurrentWeatherResponse {
   currentWeatherData: IData
   isError: boolean
   loading: boolean
+  isNotFound: boolean
 }
 
 export const initialState: IData = {
@@ -36,27 +38,35 @@ export const initialState: IData = {
   },
 }
 
-export function useWeatherData(cityId: number): IUseCurrentWeatherResponse {
+export function useWeatherData(city: string): IUseCurrentWeatherResponse {
   const [currentWeatherData, setCurrentWeatherData] =
     useState<IData>(initialState)
   const [isError, setIsError] = useState(false)
+  const [isNotFound, setIsNotFound] = useState(false)
   const [loading, setLoading] = useState(false)
 
   useState<IData>()
   useEffect(() => {
     async function getData() {
       setLoading(true)
+      setIsNotFound(false)
       try {
-        const data = await getCurrentWeatherData(cityId)
+        const data = await getCurrentWeatherData(city)
         setCurrentWeatherData(helperCurrentWeatherResponseToData(data))
+
         setIsError(false)
       } catch (error) {
-        setIsError(true)
-        console.error(error)
+        if ((error as AxiosError).response?.status === 404) {
+          setIsNotFound(true)
+        } else {
+          setIsError(true)
+          console.log((error as AxiosError).response?.status)
+          console.error(error)
+        }
       }
       setLoading(false)
     }
     getData()
-  }, [cityId])
-  return { currentWeatherData, isError, loading }
+  }, [city])
+  return { currentWeatherData, isError, loading, isNotFound }
 }
