@@ -5,8 +5,9 @@ export const WrapperWeatherData = styled.div`
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    color: ${theme.colors.white};
+    color: ${theme.colors.darkGray};
     font-size: ${theme.font.sizes.medium};
+    margin-bottom: 0.5rem;
     svg {
       height: 2.5rem;
       width: 2.5rem;

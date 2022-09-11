@@ -13,9 +13,9 @@ export const TemperatureBox = ({
 }: TemperatureBoxProps) => (
   <S.WrapperTemperatureBox>
     <S.Temperature>
-      <CountUp end={temperature} duration={1} />
+      <CountUp end={Math.round(temperature)} duration={1} />
       °C
     </S.Temperature>
-    <S.FeelsLike>Feels lik {feelsLike} °C</S.FeelsLike>
+    <S.FeelsLike>Sensação termica {Math.round(feelsLike)} °C</S.FeelsLike>
   </S.WrapperTemperatureBox>
 )

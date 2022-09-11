@@ -9,14 +9,14 @@ describe("< TemperatureBox />", () => {
     expect(screen.queryByText("25")).not.toBeInTheDocument()
     jest.runAllTimers()
     expect(screen.getByText("25")).toBeInTheDocument()
-    expect(screen.getByText("Feels lik 5 °C")).toBeInTheDocument()
+    expect(screen.getByText("Sensação termica 5 °C")).toBeInTheDocument()
   })
   it("should have the specified style", () => {
     render(<TemperatureBox temperature={25} feelsLike={5} />)
     jest.runAllTimers()
     const element = screen.getByText("25")
     expect(element.parentNode).toHaveStyleRule("font-size", "5.2rem")
-    expect(screen.getByText("Feels lik 5 °C")).toHaveStyleRule(
+    expect(screen.getByText("Sensação termica 5 °C")).toHaveStyleRule(
       "font-size",
       "1.6rem",
     )

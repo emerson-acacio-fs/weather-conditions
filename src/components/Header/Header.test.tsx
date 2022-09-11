@@ -10,6 +10,8 @@ const props = {
     icon: "10n",
   },
   temperature: 55,
+  feelsLike: 15,
+  city: "teste",
 }
 jest.useFakeTimers()
 
@@ -18,11 +20,7 @@ describe("< Header />", () => {
     render(<Header {...props} />)
     const description = screen.queryByText(props.weather.description)
     expect(description).toHaveStyle({
-      color: "#FAFAFA",
-      "font-size": "1.6rem",
-      "border-top": "0.2rem solid #FAFAFA",
-      "border-bottom": "0.2rem solid #FAFAFA",
-      padding: "0.5rem",
+      "font-size": "1.4rem",
     })
   })
 })

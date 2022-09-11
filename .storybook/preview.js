@@ -9,19 +9,19 @@ export const parameters = {
       date: /Date$/,
     },
   },
-  backgrounds: {
-    default: "dark",
-    values: [
-      {
-        name: "light",
-        value: theme.colors.white,
-      },
-      {
-        name: "dark",
-        value: theme.colors.mainBg,
-      },
-    ],
-  },
+  // backgrounds: {
+  //   default: "dark",
+  //   values: [
+  //     {
+  //       name: "light",
+  //       value: theme.colors.darkGray,
+  //     },
+  //     {
+  //       name: "dark",
+  //       value: theme.colors.mainBg,
+  //     },
+  //   ],
+  // },
 }
 
 export const decorators = [

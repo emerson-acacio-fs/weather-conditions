@@ -22,6 +22,7 @@ export const GlobalStyles = createGlobalStyle`
     body {
       font-family: ${theme.font.family};
       font-size: ${theme.font.sizes.medium};
+
       #root {
         height: 100vh;
         width: 100vw;

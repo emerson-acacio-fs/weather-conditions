@@ -7,14 +7,22 @@ export type HeaderProps = {
   weather: IWeatherData
   temperature: number
   feelsLike: number
+  city: string
 }
 
-export const Header = ({ weather, temperature, feelsLike }: HeaderProps) => (
+export const Header = ({
+  weather,
+  temperature,
+  feelsLike,
+  city,
+}: HeaderProps) => (
   <S.WrapperHeader>
-    <S.WeatherData>
-      <WeatherBox title={weather.main} weatherIcon={weather.icon} />
-      <TemperatureBox temperature={temperature} feelsLike={feelsLike} />
-    </S.WeatherData>
-    <S.Description>{weather.description}</S.Description>
+    <WeatherBox
+      title={weather.main}
+      weatherIcon={weather.icon}
+      description={weather.description}
+      city={city}
+    />
+    <TemperatureBox temperature={temperature} feelsLike={feelsLike} />
   </S.WrapperHeader>
 )

@@ -4,7 +4,14 @@ import { WeatherBox } from "."
 
 describe("< WeatherBox />", () => {
   it("should display the icon image", () => {
-    render(<WeatherBox title="Clouds" weatherIcon="10d" />)
+    render(
+      <WeatherBox
+        title="Clouds"
+        weatherIcon="10d"
+        description="test"
+        city="City"
+      />,
+    )
     const element = screen.getByAltText(/Clouds/i)
     expect(element).toHaveAttribute(
       "src",
@@ -12,7 +19,14 @@ describe("< WeatherBox />", () => {
     )
   })
   it("should have the specified style", () => {
-    render(<WeatherBox title="Clouds" weatherIcon="10d" />)
+    render(
+      <WeatherBox
+        title="Clouds"
+        weatherIcon="10d"
+        description="test"
+        city="City"
+      />,
+    )
     const element = screen.getByAltText(/Clouds/i)
     expect(element).toHaveStyle({
       width: "10rem",
@@ -20,6 +34,6 @@ describe("< WeatherBox />", () => {
       objectFit: "cover",
     })
     const title = screen.getByText(/Clouds/i)
-    expect(title).toHaveStyleRule("color", "#FAFAFA")
+    expect(title).toHaveStyleRule("font-size", "2.0rem")
   })
 })

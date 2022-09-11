@@ -5,10 +5,15 @@
   "homepage": ".",
   "dependencies": {
     "@styled-icons/bootstrap": "^10.46.0",
+    "@styled-icons/boxicons-regular": "^10.46.0",
+    "@styled-icons/evaicons-outline": "^10.46.0",
+    "@styled-icons/material": "^10.46.0",
+    "axios": "^0.27.2",
     "react": "^18.2.0",
     "react-countup": "^6.3.1",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
+    "react-spinners": "^0.13.4",
     "styled-components": "^5.3.5"
   },
   "scripts": {
@@ -61,6 +66,9 @@
     "@storybook/testing-library": "^0.0.9",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
+    "@testing-library/react-hooks": "^8.0.1",
+    "@testing-library/user-event": "^14.4.3",
+    "@types/axios": "^0.14.0",
     "@types/jest": "^29.0.0",
     "@types/node": "^16.11.26",
     "@types/react": "^18.0.0",

@@ -15,7 +15,7 @@ describe("< WeatherData />", () => {
     const element = screen.getByTitle(props.title)
     expect(element).toBeInTheDocument()
 
-    expect(element).toHaveStyle({ color: "#FAFAFA", "font-size": "1.6rem" })
+    expect(element).toHaveStyle({ color: "#2E2F42", "font-size": "1.6rem" })
     const data = screen.getByText(props.data)
     expect(data).toHaveStyleRule("margin-left", "0.5rem")
   })

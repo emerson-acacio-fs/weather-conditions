@@ -3,7 +3,7 @@ import styled, { css } from "styled-components"
 export const WrapperTemperatureBox = styled.div`
   ${({ theme }) => css`
     text-align: center;
-    color: ${theme.colors.white};
+    color: ${theme.colors.darkGray};
   `}
 `
 export const Temperature = styled.div`

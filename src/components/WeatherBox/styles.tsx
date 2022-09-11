@@ -1,6 +1,10 @@
 import styled, { css } from "styled-components"
 
-export const WrapperWeatherBox = styled.div``
+export const WrapperWeatherBox = styled.div`
+  display: flex;
+  flex-direction: row;
+  color: ${({ theme }) => theme.colors.darkGray};
+`
 
 export const WeatherImg = styled.img`
   width: 10rem;
@@ -8,9 +12,25 @@ export const WeatherImg = styled.img`
   object-fit: cover;
 `
 
-export const Title = styled.h2`
+export const Title = styled.div`
+  ${({ theme }) =>
+    css`
+      font-size: ${theme.font.sizes.xlarge};
+    `}
+`
+
+export const Description = styled.div`
+  ${({ theme }) =>
+    css`
+      font-size: ${theme.font.sizes.small};
+    `}
+`
+export const City = styled.div`
   ${({ theme }) => css`
-    display: inline;
-    color: ${theme.colors.white};
+    font-size: ${theme.font.sizes.xxlarge};
+    font-weight: ${theme.font.bold};
   `}
+`
+export const DataWrapper = styled.div`
+  display: inline;
 `
