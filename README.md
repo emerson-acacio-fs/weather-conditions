@@ -1,5 +1,5 @@
 # Descrição
-Esse projeto foi criado para consumir a API do  Open Weather [https://openweathermap.org/api] e fornecer os dados atualizados da previsão do tempo para uma determinada cidade.
+Esse projeto foi criado para consumir a API do  [Open Weather](https://openweathermap.org/api) e fornecer os dados atualizados da previsão do tempo para uma determinada cidade.
 
 
 ## Available Scripts
