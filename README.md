@@ -23,7 +23,10 @@ Para acessar o Storybook dos componentes, execute o comando:
 
 ### ` yarn storybook`
 
-Após a inicialização abra o endereço [http://localhost:6006](http://localhost:6006) no navegador.
+Após a inicialização abra o endereço [http://localhost:6006](http://localhost:6006) no navegador. 
+A seguinte janela apresentada na figura a seguir será exibida. Nela é possível analisar os diferentes componentes do projeto e suas propriedades.
+![image](https://user-images.githubusercontent.com/85792226/189542127-d8eee86b-ddbf-4803-8ae9-934fd911796a.png)
+
 
 ## Uso da aplicação
 
